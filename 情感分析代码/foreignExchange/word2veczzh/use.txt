@@ -1,0 +1,6 @@
+import gensim
+model = gensim.models.KeyedVectors.load_word2vec_format('news_12g_baidubaike_20g_novel_90g_embedding_64.bin', binary=True)
+word_vec = model.wv
+del model
+
+´ÊwµÄ´ÊÏòÁ¿ word_vec[w]
